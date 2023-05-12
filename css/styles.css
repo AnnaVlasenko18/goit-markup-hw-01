@@ -1,0 +1,36 @@
+body {
+font-family: "roboto", sans-serif;
+color: #434455;
+background: #ffffff;
+}
+
+/* @font-face {
+   font-famili: Roboto-500
+   crs: url(../font/Roboto-Medium-500 
+   
+    @font-face {
+   font-famili: Roboto-400
+   crs: url(../font/Roboto-Regular-400 */
+
+   :root {
+--titel-color: #2E2F42
+   }
+   
+/* page-heder*/
+.page-heder,
+.page-footer {
+   color: #2E2F42;  
+}
+.logo {
+color: #4D5AE5;
+}
+.heder-nav li a {
+   color: #2E2F42; 
+}
+.heder-nav li a:hover {
+color: #4d5ae5
+}
+
+.heder-nav :focus{
+   color: #4d5ae5
+}

@@ -1,36 +1,203 @@
+:root {
+   --logo-color: #4D5AE5;
+   --text-color: #2E2F42;
+   --adress-color: #434455;
+   --background-color: #ffffff;
+   --button-colos-active: #404bbf;
+   --background-seclion-four: #F4F4FD;
+   --logo-color-footer: #F4F4FD;
+}
+
 body {
-font-family: "roboto", sans-serif;
-color: #434455;
-background: #ffffff;
+   font-family: "Roboto", sans-serif;
+   color: var(--adress-color);
+   background-color: var(--background-color);
 }
 
-/* @font-face {
-   font-famili: Roboto-500
-   crs: url(../font/Roboto-Medium-500 
-   
-    @font-face {
-   font-famili: Roboto-400
-   crs: url(../font/Roboto-Regular-400 */
-
-   :root {
---titel-color: #2E2F42
-   }
-   
-/* page-heder*/
-.page-heder,
-.page-footer {
-   color: #2E2F42;  
+.list {
+   list-style: none;
 }
+
+
+/* HEDER nav */
+.logotepy-link {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.6;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--logo-color);
+}
+
 .logo {
-color: #4D5AE5;
-}
-.heder-nav li a {
-   color: #2E2F42; 
-}
-.heder-nav li a:hover {
-color: #4d5ae5
+   color: var(--text-color);
 }
 
-.heder-nav :focus{
-   color: #4d5ae5
+.header-link {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--text-color);
+   text-decoration: none;
+}
+
+.header-link:is(:hover, :focus) {
+   color: var(--logo-color);
+}
+
+
+.header-adress-link {
+   font-style: normal;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--adress-color);
+   text-decoration: none;
+}
+
+.header-item :is(:hover, :focus) {
+   color: var(--logo-color);
+}
+
+/* section1 HERO */
+.hero-item {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: var(--background-color);
+   background: var(--text-color);
+}
+
+.hero-list-btn {
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+   background: #4D5AE5;
+}
+
+.hero-list-btn:is(:hover, :focus) {
+   color: #404bbf;
+}
+
+/* section2 */
+.visuali-hidden {
+   display: none
+}
+
+.subtitle {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--text-color)
+}
+
+.text {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--adress-color);
+}
+
+/* title page */
+.title-page {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.1;
+   text-align: center;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   color: var(--text-color);
+}
+
+/* section3 */
+
+/* section4 */
+.team {
+   background: var(--background-seclion-four)
+}
+
+.team-item-title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--text-color);
+}
+
+.team-item-text {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--adress-color);
+}
+
+/* footer */
+.page-footer {
+   background: var(--text-color);
+}
+
+.logotepy-link-footer {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.6;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--logo-color);
+}
+
+.logo-footer {
+   color: var(--logo-color-footer);
+}
+
+.text-footer {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--background-seclion-four);
+}
+
+/*-------- PORTFOLIO PAGE --------*/
+
+/* section1 */
+.filters-link-btn {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: var(--background-seclion-four);
+   background: var(--logo-color);
+}
+
+.filters-link-btn:is(:hover, :focus) {
+   color: #404bbf;
+}
+
+/* section2 */
+.portfoio-item-title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--text-color);
+}
+
+.portfoio-item-text {
+   font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--adress-color);
 }

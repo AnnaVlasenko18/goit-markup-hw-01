@@ -58,7 +58,7 @@ body {
    color: var(--adress-color);
    }
 
-   .page-adress {
+.page-adress {
       font-style: normal 
    }
 .header-item :is(:hover, :focus) {

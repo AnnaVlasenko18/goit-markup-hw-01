@@ -68,7 +68,7 @@ body {
 .section-hero {
    background-color: var(--text-color);
 }
-.hero-text {
+.hero-title {
    font-weight: 700;
    font-size: 56px;
    line-height: 1.07;

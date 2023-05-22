@@ -46,8 +46,7 @@ h6 {
 }
 
 p,
-ul
-li {
+ul li {
    padding: 0;
    margin: 0;
 }
@@ -213,6 +212,7 @@ li {
 }
 
 /* section2 */
+
 /* ----------------обводка----- */
 /* .list-text li {
    outline: 1px solid red;
@@ -220,7 +220,7 @@ li {
 
 /* ---------конец обводки------- */
 .section-visuali {
-   padding: 120px 0 0 0;
+   padding: 120px 0;
 }
 
 .container-text {
@@ -280,7 +280,9 @@ li {
 }
 
 /* section3 */
-
+.section-doing {
+   padding-bottom: 120px;
+}
 .page-doing {
    display: block;
 }
@@ -297,7 +299,6 @@ li {
 
 .image-item {
    display: block;
-   margin-bottom: 120px;
    width: calc((100% - 48px) / 3);
 }
 
@@ -314,12 +315,13 @@ li {
 }
 
 /* section4 */
+
 .section-team {
+   padding: 120px 0;
    background-color: var(--background-seclion-four);
 }
 
 .title-page {
-   padding-top: 120px;
    margin-bottom: 72px;
 }
 
@@ -402,9 +404,12 @@ li {
 /*-------- PORTFOLIO PAGE --------*/
 
 /* section */
+.section-filters {
+   padding-top: 96px; 
+   padding-bottom: 120px; 
+}
 
 .list-filters {
-   margin-top: 96px;
    margin-bottom: 72px;
    justify-content: center;
    gap: 24px;
@@ -445,12 +450,12 @@ li {
    row-gap: 48px;
    justify-content: center;
    align-content: center;
-   
+
 }
 
 .portfolio-item {
    width: calc((100% - 48px) / 3);
-  }
+}
 
 .portfolio-info {
    padding: 32px 16px;
@@ -466,7 +471,4 @@ li {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--text-color);
-   }
-
-
-
+}

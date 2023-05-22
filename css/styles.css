@@ -128,6 +128,7 @@ li {
 }
 
 .header-link {
+   display: block;
    padding: 24px 0;
 
    font-weight: 500;
@@ -219,7 +220,7 @@ li {
 
 /* ---------конец обводки------- */
 .section-visuali {
-   padding: 120px 0;
+   padding: 120px 0 0 0;
 }
 
 .container-text {
@@ -279,9 +280,6 @@ li {
 }
 
 /* section3 */
-.section-doing {
-   padding-bottom: 120px;
-}
 
 .page-doing {
    display: block;
@@ -317,7 +315,6 @@ li {
 
 /* section4 */
 .section-team {
-   padding: 120px 0;
    background-color: var(--background-seclion-four);
 }
 
@@ -405,9 +402,6 @@ li {
 /*-------- PORTFOLIO PAGE --------*/
 
 /* section */
-.section-filters {
-   padding: 96px 0 120px;
-}
 
 .list-filters {
    margin-top: 96px;

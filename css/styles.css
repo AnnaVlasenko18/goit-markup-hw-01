@@ -75,13 +75,13 @@ li {
 /* ----------конец обводки */
 .page-header {
    display: flex;
+   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
    display: flex;
    align-items: center;
    margin: 0 auto;
-   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -404,10 +404,6 @@ li {
 /* section */
 .section-filters {
    padding: 96px 0 120px;
-}
-
-.container-filters {
-   display: block;
 }
 
 .list-filters {

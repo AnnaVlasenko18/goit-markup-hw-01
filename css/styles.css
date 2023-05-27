@@ -55,11 +55,12 @@ li {
 /* HEDER nav */
 
 /* -------------обводка */
-.container {
+/* .container {
    outline: 2px solid red;
 }
 
-*/ .page-header {
+*/
+.page-header {
    border-bottom: 1px solid red;
 }
 
@@ -71,6 +72,7 @@ li {
    outline: 1px solid red;
 }
 
+*/
 
 /* ----------конец обводки */
 .page-header {
@@ -393,16 +395,15 @@ li {
 
 .soc-list {
    display: flex;
+   gap: 24px;
    justify-content: center;
    align-items: center;
+   margin-bottom: 32px;
 }
 
 .soc-item {
-   /* display: inline-block; */
    width: 40px;
    height: 40px;
-
-
 }
 
 .soc-link {
@@ -413,6 +414,7 @@ li {
    display: flex;
    align-items: center;
    justify-content: center;
+   color: #4D5AE5;
 }
 
 .team-soc-icon {
@@ -471,6 +473,15 @@ li {
    background: var(--text-color);
 }
 
+.footer-container {
+   display: flex;
+   align-items: baseline;
+}
+
+.tex-footer-container {
+   margin-right: 120px;
+}
+
 .logotepy-link-footer {
    display: inline-block;
    margin-bottom: 16px;
@@ -486,7 +497,6 @@ li {
 
 .logo-footer {
    color: var(--logo-color-footer);
-
 }
 
 .text-footer {
@@ -496,6 +506,55 @@ li {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: var(--background-seclion-four);
+}
+
+.soc-footer-container {
+   width: 208px;
+}
+
+.soc-text-footer {
+   margin-bottom: 16px;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--background-color);
+
+   display: flex;
+   align-items: center;
+}
+
+.soc-footer-list {
+   display: flex;
+   gap: 16px;
+   align-items: center;
+}
+
+.footer-item {
+   width: 40px;
+   height: 40px;
+}
+
+.soc-footer-link {
+   width: 100%;
+   height: 100%;
+   background-color: #4D5AE5;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #F4F4FD;
+}
+
+
+.soc-footer-icon {
+   fill: currentColor;
+}
+
+.soc-footer-link:hover,
+.soc-footer-link:focus {
+   background-color: #31d0aa;
 }
 
 /*-------- PORTFOLIO PAGE --------*/

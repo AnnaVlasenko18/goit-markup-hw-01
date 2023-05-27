@@ -467,7 +467,7 @@ li {
 .customer-icon {
    width: 104px;
    height: 56px;
-   fill: correntColor;
+   fill: currentColor;
 }
 
 .customer-link:is(:hover, :focus) {

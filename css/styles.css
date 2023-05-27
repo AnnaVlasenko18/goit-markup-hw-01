@@ -46,7 +46,8 @@ h6 {
 }
 
 p,
-ul li {
+ul,
+li {
    padding: 0;
    margin: 0;
 }
@@ -222,9 +223,9 @@ ul li {
 /* section2 */
 
 /* ----------------обводка----- */
-.list-text li {
+/* .list-text li {
    outline: 1px solid red;
-}
+} */
 
 /* ---------конец обводки------- */
 .section-visuali {
@@ -355,7 +356,7 @@ ul li {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    border-radius: 0px 0px 4px 4px;
 
-   display: flex;
+   display: block;
    flex-direction: column;
    flex-shrink: 0;
    width: calc((100% - 72px) / 4);
@@ -366,20 +367,10 @@ ul li {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 32px 16px;
 }
 
-/* .team-info::after {
-   display: block;
-   content: '';
-   height: 40px;
-   background-image: url(..//images/icons.svg/instagram.svg); 
-   url(..//images/icons.svg/twiter.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-} */
-
 .team-item-title {
+   margin-top: 32px;
    margin-bottom: 8px;
 
    font-weight: 500;
@@ -397,7 +388,82 @@ ul li {
    letter-spacing: 0.02em;
    color: var(--adress-color);
    text-align: center;
+   margin-bottom: 8px;
 }
+
+.soc-list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.soc-item {
+   /* display: inline-block; */
+   width: 40px;
+   height: 40px;
+
+
+}
+
+.soc-link {
+   width: 100%;
+   height: 100%;
+   background-color: #4D5AE5;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.team-soc-icon {
+   fill: #F4F4FD;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+   background-color: #404bbf;
+}
+
+/* section 5 */
+.section-customers {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+
+.list-customers {
+   display: flex;
+   gap: 24px;
+}
+
+.customer-item {
+   width: calc((100% - 120px) / 6);
+   height: 88px;
+}
+
+.customer-link {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #8E8F99;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   fill: #8E8F99;
+}
+
+.customer-icon {
+   width: 104px;
+   height: 56px;
+   fill: correntColor;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+   border-color: #4D5AE5;
+   fill: #4D5AE5;
+}
+
 
 /* footer */
 .page-footer {
@@ -483,7 +549,6 @@ ul li {
    row-gap: 48px;
    justify-content: center;
    align-content: center;
-
 }
 
 .portfolio-item {

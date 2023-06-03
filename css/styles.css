@@ -154,7 +154,7 @@ li {
    content: "";
    position: absolute;
    left: 0;
-   bottom: 0;
+   bottom: -1px;
 
    opacity: 0;
    width: 100%;
@@ -176,6 +176,7 @@ li {
 .header-link:focus::after,
 .header-link.current::after {
    opacity: 1;
+   background-origin: -1px;
 }
 
 .page-adress {
@@ -259,9 +260,7 @@ li {
    text-align: center;
    border: none;
 
-   transition-property: color, background-color, border-radius;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link-btn:is(:hover, :focus) {
@@ -467,9 +466,7 @@ li {
    justify-content: center;
    color: #4D5AE5;
 
-   transition-property: color, background-color, border-radius;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -604,9 +601,7 @@ li {
    justify-content: center;
    color: #F4F4FD;
 
-   transition-property: color, background-color, border-radius;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-footer-icon {
@@ -653,9 +648,7 @@ li {
    cursor: pointer;
    border-radius: 4px;
 
-   transition-property: color, background-color, border, box-shadow;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-link-btn:is(:hover, :focus) {
@@ -685,11 +678,13 @@ li {
    transform: translateY(0);
 }
 
+.portfolio-item:focus .portfolio-text {
+   transform: translateY(0);
+}
+
 .portfolio-link {
    display: block;
-   transition-property: box-shadow;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text {
@@ -701,13 +696,11 @@ li {
    letter-spacing: 0.02em;
    color: var(--background-seclion-four);
 
-   padding-top: 40px;
-   padding-left: 32px;
-   padding-right: 32px;
+   padding: 40px 32px;
    background-color: var(--logo-color);
    height: 100%;
    transform: translateY(100%);
-   transition: transform, 300ms linear;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-wrap {
@@ -736,12 +729,14 @@ li {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/*-------------- modal ----------*/
 .backdrop {
    position: fixed;
    width: 100%;
    height: 100%;
    background-color: rgba(46, 47, 66, 0.4);
    top: 0;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -758,6 +753,7 @@ li {
    border-radius: 4px;
    padding: 24px;
    padding-right: 24px;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -765,35 +761,38 @@ li {
 }
 
 .modal-close {
+   position: absolute;
+   top: 24px;
+   right: 24px;
    width: 24px;
    height: 24px;
 
    background-color: var(--button-border-portfolio);
    color: var(--background-color);
    border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 0;
+   cursor: pointer;
    border-radius: 50%;
    display: block;
    margin-left: auto;
    display: flex;
    align-items: center;
    justify-content: center;
-
-   transition-property: color, background-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:is(:hover, :focus) {
    background-color: var(--button-colos-active);
-   color: var(--background-color);
+   fill: currentColor;
+   border: none;
 }
 
-.modal-close-icon:is(:hover, :focus) {
-   fill: currentColor;
+.modal-close-icon {
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-   visibility: none;
+   visibility: hidden;
    opacity: 0;
    pointer-events: none;
 }

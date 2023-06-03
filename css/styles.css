@@ -674,11 +674,8 @@ li {
    width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item:hover .portfolio-text {
-   transform: translateY(0);
-}
-
-.portfolio-item:focus .portfolio-text {
+.portfolio-link:hover .portfolio-text,
+.portfolio-link:focus .portfolio-text {
    transform: translateY(0);
 }
 

@@ -788,7 +788,6 @@ li {
    height: 100%;
    background-color: rgba(46, 47, 66, 0.4);
    top: 0;
-   padding: 72px 4px 24px 24px;
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -804,8 +803,7 @@ li {
    background-color: #FCFCFC;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
-   padding: 24px;
-   padding-right: 24px;
+   padding: 72px 24px 24px 24px;
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -921,7 +919,6 @@ li {
    background-color: transparent;
    outline: transparent;
    resize: none;
-   outline: none;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

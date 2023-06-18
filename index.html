@@ -13,6 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
             <nav class="header-nav">
                 <a class="logotepy-link link">Web<span class="logo">Studio</span></a>
                 <ul class="site-nav list">
-                    <li class="header-item"><a href="./index.html" class="header-link link current">Studio</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link link current">Studio</a>
+                    </li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
                     <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
                 </ul>
@@ -32,11 +34,83 @@
                     <li class="adress-item"><a href="mailto:info@devstudio.com"
                             class="header-adress-link link">info@devstudio.com</a>
                     </li>
-                    <li class="adress-item"><a href="tel:+110001111111" class="header-adress-link link">+11 (000)
+                    <li class="adress-item*tel"><a href="tel:+110001111111" class="header-adress-link link">+11 (000)
                             111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button type="button" class="mob-menu-open" data-menu-open>
+                <svg width="32" height="22">
+                    <use href="./images/icons.svg#icon-Vector-open-modal"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mob-menu is-hidden" data-menu>
+            <div>
+                <button type="button" class="menu-modal-close" data-menu-close>
+                    <svg class="mob-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"> </use>
+                    </svg>
+                </button>
+
+                <nav class="mobil-menu-nav">
+                    <ul class="mob-menu-nav list">
+                        <li class="mob-menu-item">
+                            <a href="./index.html" class="mob-menu-link link current">Studio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <address class="mobil-menu-adress">
+                    <ul class="mob-menu-nav list">
+                        <li class="mob-menu-item">
+                            <a href="tel:+110001111111" class="mob-menu-tel-link link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="mailto:info@devstudio.com" class="mob-menu-adress-link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -126,12 +200,13 @@
         </section>
         <!--section4-->
         <section class="section-team">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="title-page">Our Team</h2>
-                <ul class="list-items">
+                <ul class="list-items list">
                     <li class="team-item">
-                        <img src="./images/MarkGuerrero.jpg" class="image-one-item" alt="photo Mark Guerrero"
-                            width="264" height="260">
+                        <img srcset="./images/MarkGuerrero.jpg    1x,
+                                    ./images/MarkGuerrero.2x.jpg  2x" src="./images/MarkGuerrero.jpg"
+                            class="image-one-item" alt="photo Mark Guerrero" width="264" height="260">
 
                         <div class="team-info">
                             <h3 class="team-item-title">Mark Guerrero</h3>
@@ -170,8 +245,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./images/TomFord.jpg" class="image-two-item" alt="photo Tom Ford" width="264"
-                            height="260">
+                        <img srcset="./images/TomFord.jpg 1x, ./images/TomFord.2x.jpg 2x" src="./images/TomFord.jpg"
+                            class="image-two-item" alt="photo Tom Ford" width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-item-title">Tom Ford</h3>
                             <p class="team-item-text">Frontend Developer</p>
@@ -209,7 +284,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./images/CamilaGarcia.jpg" class="image-three-item" alt="photo Camila Garcia"
+                        <img srcset="./images/CamilaGarcia.jpg 1x, ./images/CamilaGarcia.2x.jpg 2x"
+                            src="./images/CamilaGarcia.jpg" class="image-three-item" alt="photo Camila Garcia"
                             width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-item-title">Camila Garcia</h3>
@@ -248,7 +324,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./images/DanielWilson.jpg" class="image-four-item" alt="photo Daniel Wilson"
+                        <img srcset="./images/DanielWilson.jpg 1x, ./images/DanielWilson.2x.jpg 2x"
+                            src="./images/DanielWilson.jpg" class="image-four-item" alt="photo Daniel Wilson"
                             width="264" height="260">
                         <div class="team-info">
                             <h3 class="team-item-title">Daniel Wilson</h3>
@@ -465,6 +542,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

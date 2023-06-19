@@ -1,8 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px;
-        padding-left: 0;
-        padding-right: 0;
     }
 
     /* HEDER nav */
@@ -113,8 +111,24 @@
     .section-hero {
         background-color: var(--text-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-tab-1x.jpg);
+            url(../images/hero-tab-1x.jpg), url(../images/hero-tab-2x.jpg);
         max-width: 768px;
+        max-height: 436px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-2x.jpg);
+        }
+    }
+
+    @media (max-width: 1158px) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-1x.jpg), url(../images/hero-desk-2x.jpg);
+            max-width: 1158px;
+        }
     }
 
     .hero-title {
@@ -127,6 +141,10 @@
     /* section2 */
     .container-text {
         padding: 0 15px;
+    }
+
+    .subtitle {
+        text-align: left;
     }
 
     .list-text {
@@ -175,7 +193,9 @@
 
     .footer-container {
         display: flex;
-        flex-wrap: wrap;
+        max-width: 582px;
+        align-items: baseline;
+        justify-content: left;
     }
 
     .tex-footer-container {
@@ -203,7 +223,7 @@
         text-align: left;
         width: 453px;
         height: 80px;
-        align-items: baseline;
+
     }
 
     .sub-input {
@@ -266,8 +286,18 @@
 
         background-color: var(--text-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-desk-1x.jpg);
+            url(../images/hero-desk-1x.jpg),
+            url(../images/hero-desk-2x.jpg);
         max-width: 1440px;
+        max-height: 600px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-2x.jpg);
+        }
     }
 
     .section-hero {
@@ -310,6 +340,7 @@
         font-size: 20px;
         line-height: 1.2;
         margin-top: 8px;
+        text-align: left;
     }
 
     .text {
@@ -407,6 +438,11 @@
         gap: 24px;
     }
 
+    .list-customers {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .customer-item {
         width: calc((100% - 120px) / 6);
     }
@@ -436,6 +472,7 @@
     .soc-footer-container {
         width: 208px;
         margin-right: 80px;
+        margin-bottom: 0;
     }
 
     .subscribe-container {

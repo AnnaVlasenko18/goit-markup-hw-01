@@ -111,23 +111,36 @@
     .section-hero {
         background-color: var(--text-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-tab-1x.jpg), url(../images/hero-tab-2x.jpg);
+            url(../images/hero-tab-1x.jpg);
         max-width: 768px;
         max-height: 436px;
     }
 
-    @media (min-device-pixel-ratio: 2),
+    @media (max-width: 766px) and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .section-hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero-tab-2x.jpg);
+            max-width: 768px;
         }
     }
 
-    @media (max-width: 1158px) {
+    @media (min-width: 767px) {
         .section-hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-1x.jpg), url(../images/hero-desk-2x.jpg);
-            max-width: 1158px;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero-desk-1x.jpg);
+            max-width: 1440px;
+        }
+    }
+
+    @media (min-width: 767px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero-desk-2x.jpg);
+            max-width: 1440px;
         }
     }
 
@@ -176,8 +189,7 @@
 
     /*   section 5  */
     .list-customers {
-        padding-left: 108px;
-        padding-right: 108px;
+        justify-content: center;
         column-gap: 24px;
     }
 
@@ -195,7 +207,7 @@
         display: flex;
         max-width: 582px;
         align-items: baseline;
-        justify-content: left;
+        justify-content: center;
     }
 
     .tex-footer-container {
@@ -283,11 +295,9 @@
 
     /* section1 HERO*/
     .section-hero {
-
         background-color: var(--text-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-desk-1x.jpg),
-            url(../images/hero-desk-2x.jpg);
+            url(../images/hero-desk-1x.jpg);
         max-width: 1440px;
         max-height: 600px;
     }
@@ -296,7 +306,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .section-hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero-desk-2x.jpg);
         }
     }
 
